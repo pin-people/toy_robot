@@ -17,6 +17,9 @@
 * The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
 
 Create an application that can read in commands of the following form:
+
+### Command Line Interface (CLI)
+
 ```
 PLACE X,Y,F
 MOVE
@@ -27,7 +30,7 @@ REPORT
 
 * `PLACE` will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.
 
-* The origin (0,0) can be considered to be the SOUTH WEST most corner.
+* The origin (0,0) can be considered to be the NORTH WEST most corner.
 
 * The first valid command to the robot is a `PLACE` command, after that, any sequence of commands may be issued, in any order, including another `PLACE` command. The application should discard all commands in the sequence until a valid `PLACE` command has been executed
 
@@ -39,11 +42,17 @@ REPORT
 
 * A robot that is not on the table can choose to ignore the `MOVE`, `LEFT`, `RIGHT` and `REPORT` commands.
 
-* Inputs for the CLI could be from a file or STDIN, as the developer chooses.
-
-* The web version must show the board and robot position.
+* Inputs could be from a file or STDIN, as the developer chooses.
 
 * Provide test data to exercise the application.
+
+### WEB
+
+You have to create a simple (no complex layout needed) web application, showing the table and the position and direction of the robot on the table (if robot already placed on table). All commands must update robot position, in other words, the command's output should be visible on the table, invalidating the necessity of the `REPORT` command.
+
+You are free to decide how to receive commands, being it in batches or individually, but the commands must be "processed" individually. Meaning all commands must update the robot position on the table in a way the user can understand the path the robot is following.
+
+* All commands (except `REPORT` which is unnecessary for the Web Version) should work exactly as on the CLI.
 
 ### Constraints
 
@@ -88,8 +97,8 @@ Expected output
 
 ### Deliverables
 
-Please provide your source code, and any test code/data you using in
-developing your solution.
+Please provide your source code, and any test code/data you used to
+build your solution.
 
 Please engineer your solution to a standard you consider suitable for
 production. It is not required to provide any graphical output showing the
