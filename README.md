@@ -64,36 +64,36 @@ You are free to decide how to receive commands, being it in batches or individua
 
 #### Example a
 
-    PLACE 0,0,NORTH
+    PLACE 0,0,SOUTH
     MOVE
     REPORT
 
 Expected output:
 
-    0,1,NORTH
+    0,1,SOUTH
 
 #### Example b
 
-    PLACE 0,0,NORTH
+    PLACE 0,0,SOUTH
     LEFT
     REPORT
 
 Expected output:
 
-    0,0,WEST
+    0,0,EAST
 
 #### Example c
 
     PLACE 1,2,EAST
     MOVE
     MOVE
-    LEFT
+    RIGHT
     MOVE
     REPORT
 
 Expected output
 
-    3,3,NORTH
+    3,3,SOUTH
 
 ### Deliverables
 
