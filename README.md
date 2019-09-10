@@ -106,7 +106,7 @@ movement of the toy robot on the CLI, only on the web.
 
 ## Setup
 
-1. Make sure you have Ruby 2.5.1 installed in your machine. If you need help installing Ruby, take a look at the [official installation guide](https://www.ruby-lang.org/en/documentation/installation/).
+1. Make sure you have the latest Ruby installed in your machine. If you need help installing Ruby, take a look at the [official installation guide](https://www.ruby-lang.org/en/documentation/installation/).
 
 2. Install the [bundler](http://bundler.io/) and [rails](https://rubyonrails.org/) gems by running:
 
