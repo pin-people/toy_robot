@@ -6,7 +6,6 @@
   * [Constraints](./README.md#constraints)
   * [Example Input and Output](./README.md#example-input-and-output)
   * [Deliverables](./README.md#deliverables)
-* [Setup](./README.md#setup)
 
 ## Description
 
@@ -103,25 +102,3 @@ build your solution.
 Please engineer your solution to a standard you consider suitable for
 production. It is not required to provide any graphical output showing the
 movement of the toy robot on the CLI, only on the web.
-
-## Setup
-
-1. Make sure you have the latest Ruby installed in your machine. If you need help installing Ruby, take a look at the [official installation guide](https://www.ruby-lang.org/en/documentation/installation/).
-
-2. Install the [bundler](http://bundler.io/) and [rails](https://rubyonrails.org/) gems by running:
-
-    ```gem install bundler rails```
-
-3. Create a Rails app:
-
-    ```rails new toy_robot```
-
-4. Change to the app directory:
-
-    ```cd toy_robot```
-
-5. Install dependencies:
-
-    ```bundle install```
-
-And you're ready to go!
